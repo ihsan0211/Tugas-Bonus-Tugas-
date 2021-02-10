@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS arkademy; # Buat database baru dengan nama arkademy
+
+
+USE ARKADEMY; # Menggunakan database arkademy
+
+
+CREATE TABLE IF NOT EXISTS produk ( # Membuat TABLE dengan nama produk
+
+id INT NOT NULL AUTO_INCREMENT, # COLUMN 1 diisi dengan id
+
+nama_produk VARCHAR(64) NOT NULL, # COLUMN 2 diisi dengan nama_produk
+
+keterangan VARCHAR(256) NOT NULL, # COLUMN 3 diisi keterangan
+
+harga DECIMAL(64, 2) NOT NULL, # COLUMN 4 diisi harga
+
+jumlah INT NOT NULL, # COLUMN 5 diisi dengan jumlah
+
+gambar_produk VARCHAR(64) NOT NULL, # COLUMN 6 diisi dengan gambar_produk
+
+PRIMARY KEY (id) # PRIMARY KEY ditujukan untuk id
+
+);
